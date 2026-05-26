@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 책문장</title>
+  <meta name="description" content="책문장 앱의 개인정보처리방침">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+    h1 {
+      font-size: 26px;
+      margin: 0 0 8px;
+      color: #111;
+      line-height: 1.3;
+    }
+    .effective {
+      color: #555;
+      font-size: 15px;
+      margin: 0 0 24px;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 32px 0 12px;
+      padding-top: 8px;
+      color: #111;
+      border-top: 1px solid #eee;
+    }
+    p { margin: 12px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 15px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f6f6f6;
+      font-weight: 600;
+    }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .contact {
+      background: #f8f8f8;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+    .contact a { font-weight: 600; }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      color: #888;
+      font-size: 14px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      table { font-size: 14px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="effective">앱 이름: <strong>책문장</strong><br>
+  패키지명: com.nomalab.book_quote_saver<br>
+  시행일: 2026-05-26</p>
+
+  <p>본 앱(이하 "앱")은 사용자가 책에서 발췌한 좋은 문장을 촬영·OCR로 추출해 기기 내에서 수집·보관하는 독서 인용 앱입니다. 본 방침은 앱이 어떤 정보를 처리하고, 어떻게 보관하며, 누구와 공유하는지 설명합니다.</p>
+
+  <h2>1. 수집하는 정보</h2>
+  <table>
+    <thead>
+      <tr><th>정보</th><th>용도</th><th>보관</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>사용자가 입력·저장한 책 정보 (제목·저자·ISBN·표지 URL)</td>
+        <td>책장 표시 및 문장과 연결</td>
+        <td><strong>사용자 기기 내부 저장소</strong>, 외부 송신 없음</td>
+      </tr>
+      <tr>
+        <td>인용 문장 본문·페이지·메모</td>
+        <td>사용자가 직접 저장한 인용 보관</td>
+        <td><strong>사용자 기기 내부 저장소</strong>, 외부 송신 없음</td>
+      </tr>
+      <tr>
+        <td>책 페이지 촬영 사진</td>
+        <td>OCR 텍스트 추출 및 인용 원본 보존</td>
+        <td><strong>사용자 기기 내부 저장소</strong>, 외부 송신 없음</td>
+      </tr>
+      <tr>
+        <td>ISBN (바코드 인식 시)</td>
+        <td>카카오 책 검색 API로 책 정보 자동 조회</td>
+        <td>카카오에 ISBN만 전송, 개인 식별 정보 미전송</td>
+      </tr>
+      <tr>
+        <td>광고 식별자 (AAID)</td>
+        <td>AdMob 광고 송출</td>
+        <td>Google AdMob 정책에 따름</td>
+      </tr>
+      <tr>
+        <td>결제 정보<br>(프리미엄 구매 시)</td>
+        <td>Google Play 결제 시스템</td>
+        <td>Google Play 정책에 따름. 앱은 결제 정보 자체를 저장·접근하지 않음</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>본 앱은 자체 서버를 운영하지 않으며, 사용자의 책·문장·사진 데이터를 외부 서버로 전송·저장하지 않습니다.</p>
+
+  <h2>2. 제3자 제공 / 처리위탁</h2>
+  <ul>
+    <li><strong>카카오 (책 검색 API)</strong>: ISBN을 통해 책 제목·저자·표지를 조회 — <a href="https://policy.kakao.com/" target="_blank" rel="noopener">카카오 정책 보기</a></li>
+    <li><strong>Google AdMob</strong>: 광고 송출 및 광고 식별자 처리 — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google Play 결제 (Google Play Billing)</strong>: 프리미엄(광고 제거·공유 푸터 제거) 일회성 결제 처리. <strong>자동갱신 구독 없음.</strong></li>
+    <li><strong>Google ML Kit</strong>: 텍스트 인식(OCR)·바코드 인식. 인식은 <strong>전부 기기 내에서 처리</strong>되며 외부로 전송되지 않음.</li>
+  </ul>
+
+  <h2>3. 사용자 권리</h2>
+  <ul>
+    <li>저장한 책·문장·사진은 앱 내에서 언제든 직접 삭제할 수 있습니다.</li>
+    <li>광고 식별자 초기화: 안드로이드 설정 → 개인정보 보호 → 광고 → "광고 ID 재설정"</li>
+    <li>앱 삭제 시 기기 내 저장된 모든 데이터가 함께 삭제됩니다.</li>
+    <li>데이터·결제 관련 문의: 아래 이메일</li>
+  </ul>
+
+  <h2>4. 카메라 / 저장소 권한</h2>
+  <ul>
+    <li><strong>카메라</strong>: 책 뒤표지 바코드와 페이지 문장 촬영. 거부 시 사진 기반 기능은 사용할 수 없습니다.</li>
+    <li><strong>사진/미디어 접근</strong>: 갤러리에서 페이지 사진을 가져올 때 사용.</li>
+    <li><strong>인터넷</strong>: 카카오 책 검색 API, 표지 이미지 다운로드, 광고 송출, 결제 통신.</li>
+  </ul>
+
+  <h2>5. 보관 기간 및 파기</h2>
+  <p>사용자가 앱 내에서 책·문장을 삭제하거나 앱을 제거할 때까지 사용자 기기에 보관됩니다. 본 앱 운영자는 사용자 데이터를 보관하는 별도 서버를 운영하지 않으므로, 별도의 파기 절차가 발생하지 않습니다.</p>
+
+  <h2>6. 13세 미만 아동의 정보</h2>
+  <p>본 앱은 13세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+
+  <h2>7. 방침 변경</h2>
+  <p>법령 또는 서비스 변경에 따라 본 방침이 수정되는 경우, 본 페이지를 통해 공지합니다.</p>
+
+  <h2>8. 문의</h2>
+  <div class="contact">
+    개인정보 처리에 관한 문의는 아래로 연락해 주십시오.<br>
+    이메일: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>
+    © 2026 nomalab. All rights reserved.
+  </footer>
+</body>
+</html>
