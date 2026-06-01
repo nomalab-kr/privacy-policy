@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 사주명인</title>
+  <meta name="description" content="사주명인 앱의 개인정보처리방침">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; color: #111; line-height: 1.3; }
+    .effective { color: #555; font-size: 15px; margin: 0 0 24px; }
+    h2 {
+      font-size: 20px; margin: 32px 0 12px; padding-top: 8px;
+      color: #111; border-top: 1px solid #eee;
+    }
+    p { margin: 12px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f6f6f6; font-weight: 600; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .contact { background: #f8f8f8; padding: 16px 20px; border-radius: 8px; margin-top: 16px; }
+    .contact a { font-weight: 600; }
+    footer {
+      margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee;
+      color: #888; font-size: 14px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      table { font-size: 14px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="effective">앱 이름: <strong>사주명인</strong><br>
+  패키지명: com.nomalab.saju_fortune_app<br>
+  시행일: 2026-06-01</p>
+
+  <p>본 앱(이하 "앱")은 사용자의 생년월일 등 사주 정보를 바탕으로 AI 사주 상담과 사주 리포트를 제공하는 운세 앱입니다. 본 방침은 앱이 어떤 정보를 처리하고, 어떻게 보관하며, 누구와 공유하는지 설명합니다. 본 앱은 자체 백엔드(Supabase)를 사용하여 일부 정보를 서버에 저장합니다.</p>
+
+  <h2>1. 수집하는 정보</h2>
+  <table>
+    <thead>
+      <tr><th>정보</th><th>용도</th><th>보관 / 전송</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>구글 계정 정보 (이메일, 계정 식별자)</td>
+        <td>회원 로그인 및 본인 계정 식별</td>
+        <td><strong>Supabase 인증 서버</strong>에 저장</td>
+      </tr>
+      <tr>
+        <td>생년월일, 태어난 시각, 성별, 양력/음력 구분</td>
+        <td>사주 계산 및 운세·리포트 생성</td>
+        <td><strong>Supabase DB</strong> 저장 + 사주 계산을 위해 <strong>SAZU API</strong>로 전송</td>
+      </tr>
+      <tr>
+        <td>상담 질문 내용, AI 답변, 리포트 내용</td>
+        <td>AI 사주 상담·리포트 제공 및 기록 보관</td>
+        <td><strong>Supabase DB</strong> 저장 + 답변 생성을 위해 <strong>OpenAI</strong>로 전송</td>
+      </tr>
+      <tr>
+        <td>궁합 리포트 구매 시 상대방의 생년월일·시각·성별</td>
+        <td>두 사람의 궁합 사주 분석</td>
+        <td><strong>Supabase DB</strong> 저장 + <strong>SAZU API</strong>로 전송 (상대방 식별 정보는 받지 않음)</td>
+      </tr>
+      <tr>
+        <td>기기 식별자 (device id)</td>
+        <td>친구 추천 혜택 중복·부정 사용 방지</td>
+        <td><strong>Supabase DB</strong>에 저장</td>
+      </tr>
+      <tr>
+        <td>캐시 잔액·충전/사용 내역, 구독 상태</td>
+        <td>충전식 캐시 결제 및 구독 관리</td>
+        <td><strong>Supabase DB</strong>에 저장</td>
+      </tr>
+      <tr>
+        <td>광고 식별자 (AAID)</td>
+        <td>AdMob 보상형 광고 송출</td>
+        <td>Google AdMob 정책에 따름</td>
+      </tr>
+      <tr>
+        <td>결제 정보 (캐시 충전·구독 결제 시)</td>
+        <td>Google Play 결제 시스템</td>
+        <td>Google Play 정책에 따름. 앱은 카드번호 등 결제수단 정보 자체를 저장·접근하지 않음</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>2. 제3자 제공 / 처리위탁</h2>
+  <ul>
+    <li><strong>Supabase</strong> (백엔드 인프라): 회원 인증, 데이터베이스 저장, 서버리스 함수 처리 — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>SAZU (사주 계산 API)</strong>: 생년월일·시각·성별을 전송하여 만세력(사주팔자) 계산</li>
+    <li><strong>OpenAI</strong>: 사주 데이터와 상담 질문을 전송하여 AI 답변·리포트 생성 — <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google 로그인 (Google Sign-In)</strong>: 구글 계정 기반 로그인 — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google AdMob</strong>: 광고 송출 및 광고 식별자 처리 — <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google Play 결제 (Google Play Billing)</strong>: 캐시 충전(일회성) 및 월 구독 결제 처리</li>
+  </ul>
+
+  <h2>3. 사용자 권리</h2>
+  <ul>
+    <li>저장된 사주 정보·상담 기록·리포트는 앱 내에서 조회·수정할 수 있습니다.</li>
+    <li>계정 및 관련 데이터 삭제를 원하시면 아래 이메일로 요청해 주시면 처리해 드립니다.</li>
+    <li>광고 식별자 초기화: 안드로이드 설정 → 개인정보 보호 → 광고 → "광고 ID 재설정"</li>
+    <li>데이터·결제 관련 문의: 아래 이메일</li>
+  </ul>
+
+  <h2>4. 권한</h2>
+  <ul>
+    <li><strong>인터넷</strong>: 로그인, 사주 계산(SAZU), AI 상담(OpenAI), 데이터 저장(Supabase), 광고 송출, 결제 통신에 사용합니다.</li>
+  </ul>
+
+  <h2>5. 보관 기간 및 파기</h2>
+  <p>사용자 정보는 회원 탈퇴 또는 삭제 요청 시까지 보관되며, 요청 시 관련 데이터를 지체 없이 삭제합니다. 앱을 삭제하더라도 서버에 저장된 계정·사주 데이터는 남아 있을 수 있으므로, 완전 삭제를 원하시면 위 이메일로 요청해 주세요.</p>
+
+  <h2>6. 결제 및 캐시 정책</h2>
+  <p>본 앱의 사주 리포트는 앱 내 "캐시"로 결제되며, 캐시는 Google Play를 통해 충전합니다. 충전한 캐시는 현금으로 환급되지 않으며, 리포트 생성에 사용된(즉시 제공된 디지털 콘텐츠) 캐시는 환불되지 않습니다. 미사용 잔액에 대한 환불은 Google Play 환불 정책 및 관련 법령에 따릅니다. 월 구독은 Google Play에서 언제든지 해지할 수 있습니다.</p>
+
+  <h2>7. 14세 미만 아동의 정보</h2>
+  <p>본 앱은 14세 미만 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다.</p>
+
+  <h2>8. 방침 변경</h2>
+  <p>법령 또는 서비스 변경에 따라 본 방침이 수정되는 경우, 본 페이지를 통해 공지합니다.</p>
+
+  <h2>9. 문의</h2>
+  <div class="contact">
+    개인정보 처리에 관한 문의는 아래로 연락해 주십시오.<br>
+    이메일: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>
+    © 2026 nomalab. All rights reserved.
+  </footer>
+</body>
+</html>
