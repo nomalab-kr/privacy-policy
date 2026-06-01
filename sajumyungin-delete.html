@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>계정 및 데이터 삭제 요청 - 사주명인</title>
+  <meta name="description" content="사주명인 앱 계정 및 데이터 삭제 요청 안내">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7; color: #222; background: #fff;
+      max-width: 760px; margin: 0 auto; padding: 24px 20px 80px;
+      font-size: 17px; word-break: keep-all;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; color: #111; line-height: 1.3; }
+    .effective { color: #555; font-size: 15px; margin: 0 0 24px; }
+    h2 { font-size: 20px; margin: 32px 0 12px; padding-top: 8px; color: #111; border-top: 1px solid #eee; }
+    p { margin: 12px 0; }
+    ol, ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f6f6f6; font-weight: 600; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .contact { background: #f8f8f8; padding: 16px 20px; border-radius: 8px; margin-top: 16px; }
+    .contact a { font-weight: 600; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; color: #888; font-size: 14px; text-align: center; }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; } h2 { font-size: 18px; }
+      table { font-size: 14px; } th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>계정 및 데이터 삭제 요청</h1>
+  <p class="effective">앱 이름: <strong>사주명인</strong><br>
+  개발자: nomalab<br>
+  패키지명: com.nomalab.saju_fortune_app</p>
+
+  <p>사주명인 사용자는 본 페이지의 안내에 따라 <strong>계정 및 관련 데이터의 삭제</strong>를 요청할 수 있습니다.</p>
+
+  <h2>1. 삭제 요청 방법</h2>
+  <ol>
+    <li>아래 이메일(<a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>)로 메일을 보냅니다.</li>
+    <li>제목에 <strong>"사주명인 계정 삭제 요청"</strong>이라고 적습니다.</li>
+    <li>본문에 앱에 로그인할 때 사용한 <strong>Google 계정 이메일 주소</strong>를 적어 본인 확인이 가능하도록 합니다.</li>
+  </ol>
+  <p>요청을 접수하면 본인 확인 후 <strong>영업일 기준 7일 이내</strong>에 처리하며, 처리 완료 시 회신해 드립니다.</p>
+
+  <h2>2. 삭제되는 데이터</h2>
+  <p>계정 삭제 요청 시 아래 데이터가 서버(Supabase)에서 삭제됩니다.</p>
+  <ul>
+    <li>계정 정보(Google 계정 식별자, 이메일)</li>
+    <li>사주 정보(생년월일·태어난 시각·성별 등) 및 계산 결과</li>
+    <li>AI 상담 질문·답변, 사주 리포트 내용</li>
+    <li>캐시 잔액 및 충전/사용 내역, 구독 상태</li>
+    <li>친구 추천 관련 기록, 기기 식별자</li>
+  </ul>
+
+  <h2>3. 보관되는 데이터 및 기간</h2>
+  <p>관련 법령(전자상거래법 등) 및 Google Play 결제 정책에 따라 보관이 요구되는 <strong>결제·거래 기록</strong>은 해당 법정 보관 기간 동안 보관된 후 파기될 수 있습니다. 그 외 위에 명시된 데이터는 요청 처리 시 삭제됩니다.</p>
+
+  <h2>4. 데이터 일부 삭제</h2>
+  <p>계정 전체 삭제가 아닌 일부 데이터(예: 상담 기록)의 삭제를 원하시는 경우에도 위 이메일로 요청해 주시면 처리해 드립니다.</p>
+
+  <h2>5. 문의</h2>
+  <div class="contact">
+    계정·데이터 삭제 관련 문의는 아래로 연락해 주십시오.<br>
+    이메일: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>
+    © 2026 nomalab. All rights reserved.
+  </footer>
+</body>
+</html>
