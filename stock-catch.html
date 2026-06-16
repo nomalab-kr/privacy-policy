@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 종목캐치</title>
+  <meta name="description" content="종목캐치 주식 뉴스·종목 푸시 앱의 개인정보처리방침">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; color: #111; line-height: 1.3; }
+    .effective { color: #555; font-size: 15px; margin: 0 0 24px; }
+    h2 {
+      font-size: 20px; margin: 32px 0 12px; padding-top: 8px;
+      color: #111; border-top: 1px solid #eee;
+    }
+    p { margin: 12px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f6f6f6; font-weight: 600; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .highlight {
+      background: #eef4ff; border: 1px solid #cfe0ff;
+      padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+    }
+    .contact { background: #f8f8f8; padding: 16px 20px; border-radius: 8px; margin-top: 16px; }
+    .contact a { font-weight: 600; }
+    footer {
+      margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee;
+      color: #888; font-size: 14px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      table { font-size: 14px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="effective">앱 이름: <strong>종목캐치</strong><br>
+  패키지명: com.nomalab.stock_catch<br>
+  시행일: 2026-06-16</p>
+
+  <p>종목캐치(이하 "앱")는 주식 뉴스와 "오늘 뜨는 종목" 랭킹을 보여주고, 사용자가 등록한 관심 종목에 새 뉴스가 나오면 푸시 알림을 보내는 서비스입니다. 본 방침은 앱이 어떤 정보를 처리하고, 어떻게 보관하며, 누구와 공유하는지 설명합니다.</p>
+
+  <div class="highlight">
+    <strong>핵심 요약</strong><br>
+    본 앱은 <strong>이름·이메일·전화번호·위치 등 직접적인 신원 정보를 수집하지 않습니다.</strong> 회원가입 없이 익명으로 동작하며, 관심 종목 알림을 위해 <strong>익명 계정 식별자와 푸시 토큰, 등록한 관심 종목</strong>만 서버에 저장합니다. 무료 버전은 광고를 게재합니다.
+  </div>
+
+  <h2>1. 수집·처리하는 정보</h2>
+  <table>
+    <thead>
+      <tr><th>정보</th><th>용도</th><th>보관</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>익명 계정 식별자<br>(익명 로그인 시 자동 발급)</td>
+        <td>회원가입 없이 내 관심 종목·구독 상태를 식별</td>
+        <td>서버(Supabase)에 저장. 개인 신원과 연결되지 않음</td>
+      </tr>
+      <tr>
+        <td>푸시 알림 토큰<br>(Firebase Cloud Messaging)</td>
+        <td>관심 종목에 새 뉴스가 뜨면 알림 발송</td>
+        <td>서버에 저장. 앱 삭제·재설치 시 무효화</td>
+      </tr>
+      <tr>
+        <td>등록한 관심 종목</td>
+        <td>푸시 알림 대상 종목 매칭</td>
+        <td>서버에 저장</td>
+      </tr>
+      <tr>
+        <td>광고 식별자<br>(Advertising ID 등)</td>
+        <td>무료 버전 광고 게재(Google AdMob)</td>
+        <td>Google AdMob이 정책에 따라 처리</td>
+      </tr>
+      <tr>
+        <td>결제 정보<br>(프리미엄 구독 시)</td>
+        <td>Google Play 결제 시스템</td>
+        <td>Google Play 정책에 따름. 앱은 결제 정보 자체를 저장·접근하지 않음</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>본 앱은 사용자의 이름, 이메일, 전화번호, 정확한 위치, 연락처, 사진 등 민감·신원 정보를 수집하지 않습니다.</p>
+
+  <h2>2. 제3자 제공 / 처리위탁</h2>
+  <ul>
+    <li><strong>Google AdMob</strong>: 무료 버전 광고 게재 및 광고 식별자 처리. 프리미엄(광고 제거) 구독 시 광고가 표시되지 않습니다. — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Firebase Cloud Messaging (Google)</strong>: 푸시 알림 발송을 위한 토큰 처리. — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Supabase</strong>: 익명 계정·관심 종목·푸시 토큰 등 서비스 데이터 저장 및 인증. — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google Play Billing</strong>: 프리미엄 월 구독 결제 처리(자동 갱신 구독). — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+  </ul>
+
+  <h2>3. 뉴스 콘텐츠에 관하여</h2>
+  <p>앱에 표시되는 뉴스는 외부 뉴스 검색 결과를 바탕으로 <strong>제목과 요약만</strong> 제공하며, 기사 전문은 "전문 보기"를 통해 <strong>원문 출처 링크</strong>로 연결됩니다. 본 앱은 기사 본문을 복제·저장하지 않습니다. 제공되는 종목 정보·랭킹은 <strong>투자 권유가 아닌 정보 제공용</strong>입니다.</p>
+
+  <h2>4. 권한</h2>
+  <ul>
+    <li><strong>인터넷</strong>: 뉴스·랭킹 조회, 알림 토큰 등록, 결제 처리에 사용합니다.</li>
+    <li><strong>알림(POST_NOTIFICATIONS)</strong>: 관심 종목 뉴스 푸시 알림 표시에 사용합니다. 기기 설정에서 언제든 끌 수 있습니다.</li>
+  </ul>
+
+  <h2>5. 데이터 보관 및 삭제</h2>
+  <p>앱을 삭제하면 푸시 토큰은 다음 발송 시 무효화되어 알림이 중단됩니다. 서버에 저장된 익명 계정·관심 종목 등 데이터의 삭제를 원하시면 아래 문의 이메일로 요청해 주세요. 요청 시 해당 데이터를 지체 없이 삭제합니다.</p>
+
+  <h2>6. 만 14세 미만 아동의 개인정보</h2>
+  <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>7. 변경 사항</h2>
+  <p>본 방침이 변경되면 본 페이지에서 갱신된 내용을 확인할 수 있습니다. 중요한 변경 시 앱 업데이트를 통해 안내합니다.</p>
+
+  <h2>8. 문의</h2>
+  <div class="contact">
+    개인정보 관련 문의 및 데이터 삭제 요청: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>© 종목캐치 (Stock Catch). 본 페이지는 Google Play 정책 준수를 위한 공식 개인정보처리방침입니다.</footer>
+</body>
+</html>
