@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 심바(Simba)</title>
+  <meta name="description" content="유튜브 키워드 검색·분석 도구 심바(Simba)의 개인정보처리방침">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; color: #111; line-height: 1.3; }
+    .effective { color: #555; font-size: 15px; margin: 0 0 24px; }
+    h2 {
+      font-size: 20px; margin: 32px 0 12px; padding-top: 8px;
+      color: #111; border-top: 1px solid #eee;
+    }
+    p { margin: 12px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f6f6f6; font-weight: 600; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .highlight {
+      background: #eef4ff; border: 1px solid #cfe0ff;
+      padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+    }
+    .contact { background: #f8f8f8; padding: 16px 20px; border-radius: 8px; margin-top: 16px; }
+    .contact a { font-weight: 600; }
+    footer {
+      margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee;
+      color: #888; font-size: 14px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      table { font-size: 14px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="effective">서비스 이름: <strong>심바 (Simba)</strong><br>
+  형태: Windows 데스크톱 프로그램(설치형)<br>
+  운영: 엉클노마(노마랩) · 문의 cap.wtkim@gmail.com<br>
+  시행일: 2026-07-24</p>
+
+  <p>심바(이하 "서비스")는 사용자가 <strong>본인의 YouTube Data API 키</strong>를 입력해 유튜브 키워드·채널·영상을 검색하고 성과를 분석하는 도구입니다. 본 방침은 서비스가 어떤 정보를 처리하고, 어떻게 보관하며, 누구와 공유하는지 설명합니다.</p>
+
+  <div class="highlight">
+    <strong>핵심 요약</strong><br>
+    검색·분석에 쓰는 <strong>YouTube·Gemini API 키와 검색기록·북마크·분석 결과는 사용자 PC 안에만 저장</strong>되며 서버로 전송되지 않습니다. 서버에는 <strong>로그인용 카카오 계정 이메일, 구독·이용권 상태, 기기 구분용 식별자 해시</strong>와 유료 결제 신청 정보만 저장합니다. 이름·전화번호·위치·하드웨어 고유정보는 수집하지 않습니다.
+  </div>
+
+  <h2>1. 서버에 저장·처리하는 정보</h2>
+  <table>
+    <thead>
+      <tr><th>정보</th><th>용도</th><th>보관</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>카카오 계정 이메일<br>(카카오 로그인 시 제공)</td>
+        <td>회원 식별, 로그인, 구독·이용권 연결</td>
+        <td>노마랩 인증 서버(Supabase)에 저장</td>
+      </tr>
+      <tr>
+        <td>구독·이용권 상태<br>(요금제·만료일·부여 이력)</td>
+        <td>유료 이용권 확인, 무료 사용 한도 관리, 만료·갱신 안내</td>
+        <td>서버에 저장</td>
+      </tr>
+      <tr>
+        <td>기기 식별자 해시<br>(앱이 생성한 임의 식별값의 해시)</td>
+        <td>유료 이용권의 1인 1PC 정책 확인(다른 PC 사용 차단·기기 해제)</td>
+        <td>서버에 <strong>해시값만</strong> 저장. 원본 식별자·하드웨어 정보는 저장하지 않음</td>
+      </tr>
+      <tr>
+        <td>무료 사용 횟수<br>(날짜·동작 단위 카운트)</td>
+        <td>무료 이용자의 일일 사용 한도 계산</td>
+        <td>서버에 저장</td>
+      </tr>
+      <tr>
+        <td>결제 신청 정보<br>(입금자명·이메일·기간·금액)</td>
+        <td>무통장 입금 구매 신청 접수 및 입금 확인·이용권 부여</td>
+        <td>서버에 저장(분쟁·환불 근거). 카드번호 등 결제수단 정보는 수집하지 않음</td>
+      </tr>
+      <tr>
+        <td>서비스 이용 통계<br>(Google Analytics)</td>
+        <td>접속·이용 현황 분석(개별 신원과 연결하지 않는 집계)</td>
+        <td>Google Analytics가 정책에 따라 처리</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>본 서비스는 사용자의 이름, 전화번호, 정확한 위치, 연락처, 사진 등 민감·신원 정보와 CPU·디스크 일련번호 같은 하드웨어 고유정보를 수집하지 않습니다.</p>
+
+  <h2>2. 사용자 PC에만 저장되는 정보(서버 미전송)</h2>
+  <ul>
+    <li><strong>YouTube Data API 키 · Gemini API 키</strong>: 사용자가 직접 발급해 입력한 키로, Windows 자격 증명 관리자에 안전하게 보관됩니다. 노마랩 서버로 전송·저장되지 않습니다.</li>
+    <li><strong>검색기록 · 북마크 · 캐시 · 분석 결과</strong>: 사용자 PC의 로컬 데이터베이스에만 저장됩니다.</li>
+  </ul>
+
+  <h2>3. 외부 서비스로의 직접 요청</h2>
+  <p>다음 요청은 <strong>사용자 PC에서 사용자 본인의 API 키로 직접</strong> 이루어지며, 노마랩 서버를 거치지 않습니다.</p>
+  <ul>
+    <li><strong>YouTube Data API (Google)</strong>: 키워드·채널·영상 검색과 통계 조회. — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google Gemini API</strong>: 댓글 분석 기능을 사용할 때에 한해, 해당 영상의 공개 댓글을 요약·분석. — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+  </ul>
+
+  <h2>4. 제3자 제공 / 처리위탁</h2>
+  <ul>
+    <li><strong>Supabase</strong>: 회원 인증, 구독·이용권, 결제 신청 등 서비스 데이터의 저장 및 인증 처리. — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>카카오</strong>: 카카오 계정을 이용한 로그인(인증) 처리. — <a href="https://privacy.kakao.com" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Google Analytics</strong>: 서비스 이용 통계 분석. — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+  </ul>
+  <p>본 서비스는 위 처리위탁 목적 외에 사용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다.</p>
+
+  <h2>5. 결제·구독에 관하여</h2>
+  <p>유료 구독은 무통장 입금 방식으로 신청·이용권이 부여됩니다. 이용권은 만료일까지 유효하며, 만료 시 무료 이용 한도로 전환됩니다. 해지 방법·자동갱신 여부·환불 규정 등 거래 조건은 구매 페이지 및 이용약관에 별도로 고지됩니다.</p>
+
+  <h2>6. 데이터 보관 및 삭제</h2>
+  <p>서버에 저장된 계정·구독·결제 신청 정보는 서비스 제공 및 관련 법령에서 정한 기간 동안 보관하며, 목적 달성 후 파기합니다. 계정 및 데이터의 삭제를 원하시면 아래 문의 이메일로 요청해 주세요. 요청 시 관련 법령상 보존 의무가 있는 항목을 제외하고 지체 없이 삭제합니다. PC에 저장된 API 키·검색기록 등 로컬 데이터는 프로그램에서 삭제하거나 프로그램을 제거하면 함께 삭제됩니다.</p>
+
+  <h2>7. 만 14세 미만 아동의 개인정보</h2>
+  <p>본 서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>8. 변경 사항</h2>
+  <p>본 방침이 변경되면 본 페이지에서 갱신된 내용을 확인할 수 있습니다. 중요한 변경 시 서비스 내 안내를 통해 알립니다.</p>
+
+  <h2>9. 문의</h2>
+  <div class="contact">
+    개인정보 관련 문의 및 데이터 삭제 요청: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>© 심바 (Simba) · 엉클노마(노마랩). 본 페이지는 서비스의 공식 개인정보처리방침입니다.</footer>
+</body>
+</html>
