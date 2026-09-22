@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 일당백 플러그인</title>
+  <meta name="description" content="네이버 키워드 검색량 표시·드래그프리 크롬 확장 일당백 플러그인의 개인정보처리방침">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+      font-size: 17px;
+      word-break: keep-all;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; color: #111; line-height: 1.3; }
+    .effective { color: #555; font-size: 15px; margin: 0 0 24px; }
+    h2 {
+      font-size: 20px; margin: 32px 0 12px; padding-top: 8px;
+      color: #111; border-top: 1px solid #eee;
+    }
+    p { margin: 12px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f6f6f6; font-weight: 600; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .highlight {
+      background: #eef4ff; border: 1px solid #cfe0ff;
+      padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+    }
+    .contact { background: #f8f8f8; padding: 16px 20px; border-radius: 8px; margin-top: 16px; }
+    .contact a { font-weight: 600; }
+    footer {
+      margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee;
+      color: #888; font-size: 14px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      table { font-size: 14px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="effective">서비스 이름: <strong>일당백 플러그인</strong><br>
+  형태: 크롬 확장프로그램<br>
+  운영: 일당백툴스 · 엉클노마(노마랩) · 문의 cap.wtkim@gmail.com<br>
+  시행일: 2026-09-22</p>
+
+  <p>일당백 플러그인(이하 "확장")은 네이버에서 검색할 때 연관 키워드의 월간 검색량을 검색 결과 위에 표시하고, 웹페이지의 드래그·우클릭 방지를 해제(드래그프리)하는 도구입니다. 본 방침은 확장이 어떤 정보를 다루고, 어디에 보관하며, 어디로 보내는지 설명합니다.</p>
+
+  <div class="highlight">
+    <strong>핵심 요약</strong><br>
+    확장은 <strong>운영자 서버가 없으며</strong>, 사용자 데이터를 운영자에게 전송하지 않습니다. 사용자가 직접 입력한 <strong>네이버 검색광고 API 정보(API Key·Secret·Customer ID)</strong>와 설정, 최근 검색량 캐시는 <strong>사용자 브라우저 안의 확장 저장소에만</strong> 저장됩니다. 검색량을 가져오기 위해 검색어가 <strong>네이버 검색광고 API</strong>로만 전송됩니다. 드래그프리 기능은 페이지 안에서만 동작하며 어떤 내용도 읽거나 전송하지 않습니다.
+  </div>
+
+  <h2>1. 확장이 다루는 정보</h2>
+  <table>
+    <thead>
+      <tr><th>정보</th><th>용도</th><th>보관 위치</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>네이버 검색광고 API 정보<br>(API Key·API Secret·Customer ID)</td>
+        <td>사용자를 대신해 네이버 검색광고 API에 키워드 검색량을 요청</td>
+        <td>사용자 브라우저의 확장 저장소(storage.local)에만 저장. 운영자에게 전송되지 않음. 사용자가 팝업에서 언제든 수정·삭제 가능</td>
+      </tr>
+      <tr>
+        <td>네이버에서 입력한 검색어</td>
+        <td>연관 키워드와 월간 검색량 조회</td>
+        <td>저장하지 않음. 네이버 검색광고 API 요청에만 사용</td>
+      </tr>
+      <tr>
+        <td>키워드 검색량 캐시</td>
+        <td>같은 검색어를 5분 안에 다시 검색할 때 빠르게 표시</td>
+        <td>확장 저장소에 임시 보관. 5분 후 만료되며 팝업에서 즉시 삭제 가능</td>
+      </tr>
+      <tr>
+        <td>기능 설정<br>(검색량 표시·드래그프리 켬/끔 등)</td>
+        <td>사용자가 고른 기능 상태 유지</td>
+        <td>확장 저장소에만 저장</td>
+      </tr>
+      <tr>
+        <td>라이선스 키</td>
+        <td>이용 자격 확인</td>
+        <td>확장 안에서만 확인하며 외부로 전송하지 않음</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>확장은 이름, 이메일, 전화번호, 위치, 방문 기록, 페이지 내용, 로그인 정보, 결제 정보 등 어떤 개인정보도 수집하지 않으며, 이용 통계나 분석 도구도 사용하지 않습니다.</p>
+
+  <h2>2. 권한별 사용 목적</h2>
+  <ul>
+    <li><strong>search.naver.com 접근</strong>: 네이버 검색 결과 페이지에 검색량 표를 표시하고 검색어를 강조하기 위해 사용합니다.</li>
+    <li><strong>api.searchad.naver.com / api.naver.com 접근</strong>: 사용자의 API 정보로 네이버 검색광고 API에 검색량을 요청하기 위해 사용합니다.</li>
+    <li><strong>모든 사이트(&lt;all_urls&gt;) 접근</strong>: 드래그·우클릭·복사 방지를 해제하는 드래그프리 기능을 어떤 사이트에서든 쓸 수 있게 하기 위해 사용합니다. 이 기능은 페이지의 이벤트 제한만 풀 뿐, 페이지 내용을 읽거나 저장·전송하지 않습니다.</li>
+    <li><strong>storage</strong>: API 정보, 설정, 검색량 캐시를 브라우저 안에 저장합니다.</li>
+    <li><strong>activeTab</strong>: 아이콘 클릭 또는 단축키(Alt+1)로 현재 탭에서만 드래그프리를 켜고 끄기 위해 사용합니다.</li>
+  </ul>
+
+  <h2>3. 외부 서비스로의 요청</h2>
+  <ul>
+    <li><strong>네이버 검색광고 API</strong>: 사용자가 네이버에서 검색할 때, 사용자 본인의 API 정보로 검색어의 연관 키워드 검색량을 요청합니다. 요청에는 검색어와 API 인증 정보만 포함됩니다. — <a href="https://naver.github.io/searchad-apidoc/" target="_blank" rel="noopener">네이버 검색광고 API 안내</a></li>
+  </ul>
+  <p>그 밖의 어떤 서버로도 데이터를 보내지 않습니다. 운영자는 사용자의 API 정보나 검색어를 볼 수 없습니다.</p>
+
+  <h2>4. 제3자 제공 / 처리위탁</h2>
+  <p>확장은 사용자 데이터를 제3자에게 판매·제공하거나 처리위탁하지 않습니다. 위 3항의 네이버 API 요청은 사용자가 직접 발급받은 API 계정으로 사용자를 대신해 이루어지며, 네이버의 개인정보 처리는 <a href="https://policy.naver.com/policy/privacy.html" target="_blank" rel="noopener">네이버 개인정보처리방침</a>을 따릅니다.</p>
+
+  <h2>5. 데이터 보관 및 삭제</h2>
+  <p>모든 데이터는 사용자 브라우저 안에만 있습니다. 확장 팝업에서 API 정보를 지우거나 캐시 삭제 버튼을 누르면 즉시 삭제되며, 확장을 제거하면 저장된 모든 데이터가 함께 삭제됩니다. 운영자가 보관하는 사용자 데이터는 없으므로 별도의 삭제 요청 절차가 필요하지 않습니다.</p>
+
+  <h2>6. 안전성 확보 조치</h2>
+  <ul>
+    <li>API 정보는 브라우저 동기화(sync)가 아닌 로컬 확장 저장소에만 두어 다른 기기로 전송되지 않게 합니다.</li>
+    <li>네이버 API와의 통신은 HTTPS로만 이루어집니다.</li>
+    <li>확장은 사용자 식별자를 만들거나 수집하지 않습니다.</li>
+  </ul>
+
+  <h2>7. 만 14세 미만 아동의 개인정보</h2>
+  <p>확장은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>8. 변경 사항</h2>
+  <p>본 방침이 변경되면 본 페이지에서 갱신된 내용을 확인할 수 있습니다. 데이터 처리 방식이 바뀌는 중요한 변경은 확장 업데이트 안내와 함께 알립니다.</p>
+
+  <h2>9. 문의</h2>
+  <div class="contact">
+    개인정보 관련 문의: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>© 일당백 플러그인 · 일당백툴스 · 엉클노마(노마랩). 본 페이지는 확장의 공식 개인정보처리방침입니다.</footer>
+</body>
+</html>
