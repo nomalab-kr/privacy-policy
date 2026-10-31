@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 찍찍이</title>
+  <meta name="description" content="영어 교재 문장 반복 듣기 서비스 찍찍이의 개인정보처리방침">
+  <style>
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+      line-height: 1.7; color: #222; background: #fff;
+      max-width: 760px; margin: 0 auto; padding: 24px 20px 80px;
+      font-size: 17px; word-break: keep-all;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; color: #111; line-height: 1.3; }
+    .effective { color: #555; font-size: 15px; margin: 0 0 24px; }
+    h2 { font-size: 20px; margin: 32px 0 12px; padding-top: 8px; color: #111; border-top: 1px solid #eee; }
+    p { margin: 12px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+    th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; vertical-align: top; }
+    th { background: #f6f6f6; font-weight: 600; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #111; }
+    .highlight { background: #fff7e6; border: 1px solid #fde4b3; padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
+    .contact { background: #f8f8f8; padding: 16px 20px; border-radius: 8px; margin-top: 16px; }
+    .contact a { font-weight: 600; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #eee; color: #888; font-size: 14px; text-align: center; }
+    @media (max-width: 480px) {
+      body { font-size: 16px; padding: 20px 16px 60px; }
+      h1 { font-size: 22px; } h2 { font-size: 18px; }
+      table { font-size: 14px; } th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>개인정보처리방침</h1>
+  <p class="effective">서비스 이름: <strong>찍찍이</strong><br>
+  형태: 웹 서비스(모바일 브라우저·홈 화면 추가 앱)<br>
+  운영: 슈퍼빌더(노마랩) · 문의 cap.wtkim@gmail.com<br>
+  시행일: 2026-11-01</p>
+
+  <p>찍찍이(이하 "서비스")는 영어 교재의 예문을 미리 만들어 둔 음성으로 Unit 단위로 반복해 듣는 영어 듣기 서비스입니다. 본 방침은 서비스가 어떤 정보를 처리하고, 어떻게 보관하며, 누구에게 맡기는지 설명합니다.</p>
+
+  <div class="highlight">
+    <strong>핵심 요약</strong><br>
+    로그인 없이도 각 책의 Unit 1을 들을 수 있으며, 이때는 개인정보를 수집하지 않습니다. 카카오 로그인을 하면 <strong>카카오 계정 식별자·이메일·닉네임, 듣던 위치(책·Unit·문장), 이용권 상태</strong>만 서버에 저장합니다. 반복 횟수·속도 같은 듣기 설정은 <strong>사용자 기기(브라우저)에만</strong> 저장됩니다. 이름·전화번호·위치·결제수단 정보는 수집하지 않습니다.
+  </div>
+
+  <h2>1. 서버에 저장·처리하는 정보</h2>
+  <table>
+    <thead><tr><th>정보</th><th>용도</th><th>보관</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>카카오 계정 식별자·이메일·닉네임<br>(카카오 로그인 시 제공)</td>
+        <td>회원 식별, 로그인 유지, 이용권 연결</td>
+        <td>인증 서버(Supabase)에 저장. 탈퇴 요청 시 삭제</td>
+      </tr>
+      <tr>
+        <td>학습 진행 위치<br>(책, Unit 번호, 문장 번호, 완료한 Unit)</td>
+        <td>다음에 접속했을 때 듣던 곳부터 이어 듣기</td>
+        <td>서버에 저장. 탈퇴 시 함께 삭제</td>
+      </tr>
+      <tr>
+        <td>이용권 상태<br>(요금제, 만료일, 부여 이력)</td>
+        <td>유료 이용권 확인, 만료 안내</td>
+        <td>서버에 저장(거래 근거로 관련 법령 기간 보관)</td>
+      </tr>
+      <tr>
+        <td>이용권 신청 정보<br>(사용자 ID, 입금자명, 문의 내용)</td>
+        <td>무통장 입금 신청 접수, 입금 확인, 이용권 부여</td>
+        <td>노마랩 문의 양식(nomalab.kr)으로 접수해 보관(분쟁·환불 근거). 카드번호 등 결제수단 정보는 수집하지 않음</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>본 서비스는 사용자의 실명, 전화번호, 주소, 정확한 위치, 연락처, 사진 등 민감·신원 정보를 수집하지 않으며, 광고 추적 도구나 외부 분석 도구를 사용하지 않습니다.</p>
+
+  <h2>2. 사용자 기기에만 저장되는 정보(서버 미전송)</h2>
+  <ul>
+    <li><strong>듣기 설정</strong>(반복 횟수, 재생 속도, 따라 읽기 공백 사용 여부): 브라우저 저장소(localStorage)에만 저장되며 서버로 보내지 않습니다. 브라우저 데이터를 지우면 함께 삭제됩니다.</li>
+    <li><strong>로그인 세션 쿠키</strong>: 로그인 상태를 유지하기 위한 필수 쿠키입니다. 광고·추적 목적의 쿠키는 사용하지 않습니다.</li>
+  </ul>
+
+  <h2>3. 제3자 제공 / 처리위탁</h2>
+  <ul>
+    <li><strong>Supabase</strong>: 회원 인증, 학습 진행·이용권 데이터 저장, 음성 파일 보관·전송. — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>Vercel</strong>: 웹 서비스 호스팅(접속 로그는 Vercel 정책에 따라 단기 보관). — <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">정책 보기</a></li>
+    <li><strong>카카오</strong>: 카카오 계정을 이용한 로그인(인증) 처리. — <a href="https://privacy.kakao.com" target="_blank" rel="noopener">정책 보기</a></li>
+  </ul>
+  <p>서비스의 영어 음성은 운영자가 음성 합성 서비스로 미리 제작해 둔 파일이며, 사용자의 정보가 음성 합성 서비스로 전달되는 일은 없습니다. 본 서비스는 위 처리위탁 목적 외에 사용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다.</p>
+
+  <h2>4. 결제·이용권에 관하여</h2>
+  <p>유료 이용권은 무통장 입금 방식으로 신청하며, 입금 확인 후 운영자가 기간을 부여합니다. 자동 결제는 없으며 만료 시 무료 범위(각 책의 Unit 1)로 전환됩니다. 환불 등 거래 조건은 이용약관에 별도로 고지합니다.</p>
+
+  <h2>5. 데이터 보관 및 삭제</h2>
+  <p>서버에 저장된 계정·학습 진행·이용권 정보는 서비스 제공 및 관련 법령에서 정한 기간 동안 보관하며, 목적 달성 후 파기합니다. 계정 및 데이터의 삭제(탈퇴)를 원하시면 아래 문의 이메일로 로그인에 쓴 카카오 계정 이메일을 적어 요청해 주세요. 관련 법령상 보존 의무가 있는 항목을 제외하고 지체 없이 삭제합니다.</p>
+
+  <h2>6. 만 14세 미만 아동의 개인정보</h2>
+  <p>본 서비스는 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+  <h2>7. 변경 사항</h2>
+  <p>본 방침이 변경되면 본 페이지에서 갱신된 내용을 확인할 수 있습니다. 중요한 변경 시 서비스 내 안내를 통해 알립니다.</p>
+
+  <h2>8. 문의</h2>
+  <div class="contact">
+    개인정보 관련 문의 및 데이터 삭제 요청: <a href="mailto:cap.wtkim@gmail.com">cap.wtkim@gmail.com</a>
+  </div>
+
+  <footer>© 찍찍이 · 슈퍼빌더(노마랩). 본 페이지는 서비스의 공식 개인정보처리방침입니다.</footer>
+</body>
+</html>
